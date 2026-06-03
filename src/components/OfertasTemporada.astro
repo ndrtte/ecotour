@@ -1,0 +1,43 @@
+---
+import { ofertasTemporada } from '../data/siteData';
+
+interface Props {
+  showHeading?: boolean;
+}
+
+const { showHeading = true } = Astro.props;
+---
+
+<section id="pricing" class="py-20 bg-slate-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {showHeading && (
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Membership Plans</h2>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+          Choose the plan that fits your fitness journey
+        </p>
+      </div>
+    )}
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      {ofertasTemporada.map((oferta) => (
+        <div
+          class={`bg-slate-900 p-8 rounded-xl border-2 border-slate-700'hover:border-orange-500 transition-all`}>
+          <h3 class="text-2xl font-bold text-white mb-2">{oferta.nombre}</h3>
+          <div class="mb-6">
+            <span class="text-4xl font-bold text-white">{oferta.precioOferta}</span>
+            <span class="text-gray-400 line-through">{oferta.precioRegular}</span>
+          </div>
+          <ul class="space-y-4 mb-8">
+            {oferta.detalles.map((detalle) => (
+              <li class="flex items-start text-gray-300 gap-3">
+                <i class="ri-checkbox-circle-fill text-orange-500 text-xl shrink-0 mt-0.5"></i>
+                <span class="leading-relaxed">{detalle}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+

@@ -397,45 +397,18 @@ export const actividades = [
   },
 ];
 
-export const pricingPlans = [
+export const ofertasTemporada = [
   {
-    name: "Basic",
-    price: "$29",
-    period: "/month",
-    features: [
+    nombre: "Oferta1",
+    precioRegular: "29 HNL",
+    precioOferta: "10 HNL",
+    detalles: [
       "Access to gym facilities",
       "Basic equipment usage",
       "Locker room access",
       "Free parking",
-    ],
-    popular: false,
-  },
-  {
-    name: "Premium",
-    price: "$59",
-    period: "/month",
-    features: [
-      "Everything in Basic",
-      "Group classes included",
-      "Personal trainer consultation",
-      "Nutrition guidance",
-      "24/7 access",
-    ],
-    popular: true,
-  },
-  {
-    name: "Elite",
-    price: "$99",
-    period: "/month",
-    features: [
-      "Everything in Premium",
-      "Unlimited personal training",
-      "Custom meal plans",
-      "Priority class booking",
-      "Spa & recovery access",
-    ],
-    popular: false,
-  },
+    ]
+  }
 ];
 
 export const testimonials = [
