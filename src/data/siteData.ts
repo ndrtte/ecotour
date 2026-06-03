@@ -399,16 +399,53 @@ export const actividades = [
 
 export const ofertasTemporada = [
   {
-    nombre: "Oferta1",
-    precioRegular: "29 HNL",
-    precioOferta: "10 HNL",
+    nombre: "Paquete Familiar Básico",
+    precioRegular: "800 HNL",
+    precioOferta: "550 HNL",
+    badge: "ECO-PROMO",
+    cuposDisponibles: 4,
+    cuposTotal: 10,
     detalles: [
-      "Access to gym facilities",
-      "Basic equipment usage",
-      "Locker room access",
-      "Free parking",
-    ]
-  }
+      "Acceso general a áreas recreativas naturales",
+      "Uso de equipo básico para actividades (según disponibilidad)",
+      "Áreas de descanso y vestidores incluidos",
+      "Estacionamiento gratuito dentro del complejo",
+      "Acceso a senderos cortos autoguiados",
+      "Zona de picnic familiar",
+    ],
+  },
+  {
+    nombre: "Experiencia Premium Pico Nocturno",
+    precioRegular: "1500 HNL",
+    precioOferta: "1150 HNL",
+    badge: "CUPOS LIMITADOS",
+    cuposDisponibles: 6,
+    cuposTotal: 10,
+    detalles: [
+      "Ascenso guiado al atardecer con acceso exclusivo a mirador privado",
+      "Cena ligera o picnic especial en la cima",
+      "Guía certificado durante todo el recorrido",
+      "Equipo de iluminación y seguridad incluido (linternas/frontales)",
+      "Sesión de fotos en puntos panorámicos",
+      "Transporte de regreso incluido",
+    ],
+  },
+  {
+  nombre: "Promo Verano",
+  precioRegular: "600 HNL",
+  precioOferta: "350 HNL",
+  badge: "TIEMPO LIMITADO",
+  cuposDisponibles: 2,
+  cuposTotal: 8,
+  detalles: [
+    "Acceso especial de fin de semana a áreas recreativas",
+    "Paquete válido para 2 personas",
+    "Disponible únicamente durante temporada de verano (junio - agosto)",
+    "Ingreso con horario preferencial en fines de semana",
+    "Acceso a zonas seleccionadas del complejo",
+    "Promoción sujeta a disponibilidad de cupos"
+  ]
+},
 ];
 
 export const testimonials = [
