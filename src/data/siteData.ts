@@ -53,7 +53,7 @@ export const contactInfo = [
 export const navigation = [
   { name: "Inicio", href: "/" },
   { name: "Quienes somos", href: "/about" },
-  { name: "Excursiones", href: "/classes" },
+  { name: "Excursiones", href: "/excursiones" },
   { name: "Paquetes Familiares", href: "/pricing" },
   { name: "Guías", href: "/pricing" },
   { name: "Contacto", href: "/contact" },
@@ -306,8 +306,8 @@ export const actividades = [
       "Disfruta de una aventura de un día visitando Cayos Cochinos, un archipiélago protegido reconocido por su belleza natural y biodiversidad.",
     precio: "1,500 HNL",
     dificultad: "Baja",
-    imagen: "",
-
+    imagen:
+      "https://visitatlantida.com/wp-content/uploads/2015/06/Cayos-Cochinos.jpg",
     detalles: [
       "Duración: Día completo",
       "Salida desde La Ceiba",
@@ -320,78 +320,81 @@ export const actividades = [
       "Paisajes espectaculares, aguas turquesas, vida marina y una experiencia inolvidable en el Caribe hondureño.",
   },
   {
-    nombre: "Visita a Comunidad Local",
+    nombre: "Experiencia Cultural Local",
     descripcion:
-      "Conoce la cultura y tradiciones de las comunidades de la región.",
+      "Sumérgete en la cultura y tradiciones vivas de las comunidades cercanas al Cangrejal.",
     descripcionDetallada:
-      "Un tour cultural que te conecta con la gente local, su gastronomía, artesanía y forma de vida en los alrededores del Cangrejal.",
+      "Vive un recorrido cultural guiado por miembros de la comunidad, donde conocerás tradiciones, gastronomía y artesanías locales.",
     precio: "350 HNL",
     dificultad: "Baja",
-    imagen: "",
+    imagen: "https://wa-dani.com/wp-content/uploads/2022/05/Carnaval2022.jpeg",
     detalles: [
       "Duración: 2.5 horas",
       "Apto para todas las edades",
       "Guía local bilingüe",
-      "Degustación de comida típica incluida",
-      "Grupos de máximo 12 personas",
+      "Degustación de comida típica",
+      "Actividad en colaboración con la comunidad",
     ],
     queEsperar:
-      "Calidez humana, sabores auténticos y una perspectiva cultural que enriquece cualquier viaje.",
+      "Intercambio cultural auténtico, sabores tradicionales y una conexión respetuosa con la vida local.",
   },
   {
-    nombre: "Pesca Deportiva en el Río",
-    descripcion: "Lanza tu caña en las aguas cristalinas del Cangrejal.",
-    descripcionDetallada:
-      "Actividad tranquila y entretenida para quienes disfrutan de la pesca. El guía te mostrará los mejores puntos del río y las técnicas locales.",
-    precio: "700 HNL",
-    dificultad: "Baja",
-    imagen: "",
-    detalles: [
-      "Duración: 3 horas",
-      "Edad mínima: 8 años",
-      "Caña y equipo incluidos",
-      "Pesca catch and release",
-      "Guía pescador local",
-    ],
-    queEsperar:
-      "Contacto directo con el río y la satisfacción de pescar en aguas vírgenes.",
-  },
-  {
-    nombre: "Tour en Bicicleta de Montaña",
-    descripcion: "Recorre senderos y caminos rurales sobre dos ruedas.",
-    descripcionDetallada:
-      "Un recorrido en bicicleta por caminos rurales, aldeas y miradores naturales con vistas al río y la montaña.",
-    precio: "580 HNL/persona",
-    dificultad: "Media",
-    imagen: "",
-    detalles: [
-      "Duración: 2.5 horas",
-      "Edad mínima: 12 años",
-      "Bicicleta y casco incluidos",
-      "Nivel físico básico recomendado",
-      "Guía en bicicleta",
-    ],
-    queEsperar:
-      "Libertad, aire fresco, paisajes rurales y la adrenalina de los descensos en tierra.",
-  },
-  {
-    nombre: "Expedición Botánica",
+    nombre: "Paseo en lancha por manglares",
     descripcion:
-      "Aprende sobre la flora medicinal y tropical de la selva hondureña.",
+      "Recorre canales naturales rodeados de manglares y descubre la vida silvestre de la costa caribeña.",
     descripcionDetallada:
-      "Un recorrido educativo guiado por un experto botánico para conocer las plantas medicinales, árboles maderables y especies únicas de la región.",
-    precio: "420 HNL",
+      "Explora en lancha los ecosistemas de manglar cercanos a la costa de La Ceiba, observando aves, fauna local y la importancia ecológica de estos entornos naturales.",
+    precio: "600 HNL",
     dificultad: "Baja",
-    imagen: "",
+    imagen:
+      "https://www.reservacioneslaceiba.com/wp-content/uploads/2017/01/vlcsnap-2020-05-25-12h49m50s504.jpg",
     detalles: [
       "Duración: 2 horas",
       "Apto para todas las edades",
-      "Ideal para grupos escolares",
-      "Guía botánico especializado",
-      "Material educativo incluido",
+      "Lancha y chaleco incluidos",
+      "Guía local",
+      "Recorrido tranquilo",
     ],
     queEsperar:
-      "Conocimiento, asombro y una nueva apreciación por la biodiversidad de Honduras.",
+      "Naturaleza costera, observación de aves y un paseo relajante por canales naturales.",
+  },
+  {
+    nombre: "Tour en Bicicleta de Montaña",
+    descripcion:
+      "Explora rutas de montaña y paisajes naturales sobre dos ruedas.",
+    descripcionDetallada:
+      "Recorre caminos rurales y senderos naturales en bicicleta, pasando por comunidades locales, miradores y paisajes montañosos cercanos al área del Cangrejal y Pico Bonito.",
+    precio: "580 HNL por persona",
+    dificultad: "Media",
+    imagen: "https://visitatlantida.com/wp-content/uploads/2015/08/MTB-15.jpg",
+    detalles: [
+      "Duración: 2.5 horas",
+      "Edad mínima: 13 años",
+      "Bicicleta y casco incluidos",
+      "Nivel físico básico recomendado",
+      "Guía acompañante",
+    ],
+    queEsperar:
+      "Paisajes montañosos, aire fresco, tramos de aventura ligera y una forma activa de conocer la región.",
+  },
+  {
+    nombre: "Pesca deportiva",
+    descripcion:
+      "Disfruta una jornada de pesca en ríos o zonas costeras del Caribe hondureño.",
+    descripcionDetallada:
+      "Vive una experiencia tranquila practicando pesca deportiva en entornos naturales cercanos a La Ceiba.",
+    precio: "700 HNL",
+    dificultad: "Baja",
+    imagen: "https://i.ytimg.com/vi/x6FXz6SJXr0/maxresdefault.jpg",
+    detalles: [
+      "Duración: 3 horas",
+      "Apto para principiantes",
+      "Equipo de pesca incluido",
+      "Guía local",
+      "Actividad relajante",
+    ],
+    queEsperar:
+      "Relajación, contacto con la naturaleza y la oportunidad de disfrutar de la pesca en un entorno tropical.",
   },
 ];
 
