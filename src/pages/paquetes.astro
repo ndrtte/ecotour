@@ -1,128 +1,167 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import PricingPlans from '../components/OfertasTemporada.astro';
-import { siteData, ofertasTemporada, paymentOptions } from '../data/siteData';
+import Layout from "../layouts/Layout.astro";
+import PricingPlans from "../components/OfertasTemporada.astro";
+import { siteData, tipoTransporte, paymentOptions } from "../data/siteData";
 ---
 
-<Layout title={`Pricing - ${siteData.name}`} description="Choose the perfect membership plan for your fitness journey">
+<Layout
+  title={`Pricing - ${siteData.name}`}
+  description="Choose the perfect membership plan for your fitness journey"
+>
   <!-- Hero Section -->
-  <section class="pt-32 pb-20 bg-linear-to-br from-slate-900 via-slate-800 to-slate-900">
+  <section
+    class="pt-32 pb-20 bg-linear-to-br from-slate-900 via-slate-800 to-slate-900"
+  >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto">
         <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">Paquetes</h1>
         <p class="text-xl text-gray-300">
-          Descubre nuestras ofertas especiales diseñadas para que vivas la aventura al mejor precio de la temporada.
+          Descubre nuestras ofertas especiales diseñadas para que vivas la
+          aventura al mejor precio de la temporada.
         </p>
       </div>
     </div>
   </section>
 
-  
   <PricingPlans showHeading={false} />
 
-  <!-- Payment Options Section -->
+  <!-- Seccion de Reservas -->
   <section class="py-20 bg-slate-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl font-bold text-white mb-12 text-center">Payment Options</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
-        {paymentOptions.plans.map((plan) => (
-          <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 text-center hover:border-orange-500 transition-all">
-            <h3 class="text-2xl font-bold text-white mb-3">{plan.type}</h3>
-            <p class="text-gray-300 leading-relaxed">{plan.description}</p>
-          </div>
-        ))}
-      </div>
-      
+      <h2 class="text-4xl font-bold text-white mb-12 text-center">
+        Sobre las reservas
+      </h2>
       <div class="max-w-4xl mx-auto">
         <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 mb-8">
-          <h3 class="text-2xl font-bold text-white mb-6 text-center">Accepted Payment Methods</h3>
+          <h3 class="text-2xl font-bold text-white mb-6 text-center">
+            Métodos de pago aceptados
+          </h3>
           <div class="flex flex-wrap justify-center gap-4">
-            {paymentOptions.methods.map((method) => (
-              <div class="bg-slate-900 px-6 py-3 rounded-lg border border-slate-700">
-                <span class="text-gray-300 font-medium">{method}</span>
-              </div>
-            ))}
+            {
+              paymentOptions.methods.map((method) => (
+                <div class="bg-slate-900 px-6 py-3 rounded-lg border border-slate-700">
+                  <span class="text-gray-300 font-medium">{method}</span>
+                </div>
+              ))
+            }
           </div>
         </div>
-        
+
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-orange-500/10 border border-orange-500/30 p-6 rounded-xl text-center">
+          <div
+            class="bg-orange-500/10 border border-orange-500/30 p-6 rounded-xl text-center"
+          >
             <i class="ri-shield-check-line text-4xl text-orange-500 mb-4"></i>
-            <h4 class="text-xl font-bold text-white mb-2">Money-Back Guarantee</h4>
+            <h4 class="text-xl font-bold text-white mb-2">
+              Política de cancelación
+            </h4>
             <p class="text-gray-300">{paymentOptions.guarantee}</p>
           </div>
-          <div class="bg-orange-500/10 border border-orange-500/30 p-6 rounded-xl text-center">
+          <div
+            class="bg-orange-500/10 border border-orange-500/30 p-6 rounded-xl text-center"
+          >
             <i class="ri-gift-line text-4xl text-orange-500 mb-4"></i>
-            <h4 class="text-xl font-bold text-white mb-2">Free Trial</h4>
+            <h4 class="text-xl font-bold text-white mb-2">Reservas</h4>
             <p class="text-gray-300">{paymentOptions.trial}</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="pt-10 items-center justify-center text-center">
+        <div
+          class="text-sm text-orange-400 uppercase tracking-widest mb-2 font-semibold"
+        >
+          Planifica tu aventura
+        </div>
+        <h3 class="text-3xl font-bold text-white mb-1">
+          Calculadora de Reservas
+        </h3>
+        <p class="text-gray-400 text-sm mb-8">
+          Estima el costo de tu experiencia antes de reservar
+        </p>
+        <div id="resultado" class="hidden mt-6 text-center">
+          <p class="text-gray-400 text-sm mb-1">Total estimado</p>
+          <p class="text-4xl font-bold text-orange-500">
+            <span id="total"></span> HNL
+          </p>
+          <p class="text-gray-500 text-xs mt-2">
+            *Precio sujeto a disponibilidad
+          </p>
+        </div>
 
-  <!-- FAQ Section -->
-  <section class="py-20 bg-slate-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl font-bold text-white mb-12 text-center">Frequently Asked Questions</h2>
-      <div class="max-w-3xl mx-auto space-y-6">
-        <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-orange-500 transition-all">
-          <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-2">
-            <i class="ri-question-line text-orange-500"></i>
-            Can I cancel my membership anytime?
-          </h3>
-          <p class="text-gray-400 leading-relaxed">
-            Yes, you can cancel your membership at any time with 30 days notice. No long-term contracts required.
-          </p>
-        </div>
-        <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-orange-500 transition-all">
-          <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-2">
-            <i class="ri-question-line text-orange-500"></i>
-            Do you offer trial periods?
-          </h3>
-          <p class="text-gray-400 leading-relaxed">
-            Yes! We offer a 7-day free trial for new members. Come in and experience everything we have to offer.
-          </p>
-        </div>
-        <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-orange-500 transition-all">
-          <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-2">
-            <i class="ri-question-line text-orange-500"></i>
-            Are personal training sessions included?
-          </h3>
-          <p class="text-gray-400 leading-relaxed">
-            Personal training sessions are included in Premium and Elite plans. Basic members can purchase sessions separately.
-          </p>
-        </div>
-        <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-orange-500 transition-all">
-          <h3 class="text-xl font-bold text-white mb-3 flex items-center gap-2">
-            <i class="ri-question-line text-orange-500"></i>
-            What payment methods do you accept?
-          </h3>
-          <p class="text-gray-400 leading-relaxed">
-            We accept all major credit cards, debit cards, and bank transfers. Monthly payments are automatically processed.
-          </p>
+        <div
+          class="bg-white/5 border border-white/10 rounded-2xl p-8 max-w-md mx-auto backdrop-blur-sm"
+        >
+          <div class="mb-6 text-left">
+            <label class="block text-sm text-gray-400 mb-2 font-medium">
+              Número de Personas
+            </label>
+            <input
+              type="number"
+              id="numero-personas"
+              placeholder="Ej. 4"
+              class="w-full bg-white/10 border border-white/20 text-white placeholder-gray-500 rounded-xl px-4 py-3 focus:outline-none focus:border-orange-400 transition"
+            />
+            <p id="error-personas" class="text-red-400 text-xs mt-1 hidden">
+              Ingresa un número válido de personas.
+            </p>
+          </div>
+
+          <div class="mb-8 text-left">
+            <label class="block text-sm text-gray-400 mb-2 font-medium">
+              Tipo de Transporte
+            </label>
+            <select
+              class="w-full bg-white/10 border border-white/20 text-white rounded-xl px-4 py-3 focus:outline-none focus:border-orange-400 transition appearance-none cursor-pointer"
+            >
+              {
+                tipoTransporte.map((transporte) => (
+                  <option class="bg-gray-900">{transporte.tipo}</option>
+                ))
+              }
+            </select>
+          </div>
+
+          <button
+            class="w-full bg-orange-500 hover:bg-orange-400 text-white font-semibold py-3 rounded-xl transition-all duration-200 active:scale-95"
+            id="btn-calcular"
+          >
+            Calcular Presupuesto
+          </button>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- CTA Section -->
-  <section class="py-20 bg-linear-to-r from-orange-500 to-orange-600">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
-        Ready to Get Started?
-      </h2>
-      <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-        Contact us today to schedule a tour and start your fitness journey
-      </p>
-      <a
-        href="/contact"
-        class="inline-flex items-center justify-center gap-3 bg-white text-orange-500 hover:bg-slate-100 px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 shadow-lg"
-      >
-        Contact Us
-        <i class="ri-arrow-right-line"></i>
-      </a>
-    </div>
-  </section>
 </Layout>
 
+<script>
+  import { calcularPresupuesto } from "../utils/calcularPresupuesto";
+  import { tipoTransporte } from "@/data/siteData";
+
+  const btn = document.getElementById("btn-calcular");
+  const input = document.getElementById("numero-personas") as HTMLInputElement;
+  const select = document.querySelector("select") as HTMLSelectElement;
+  const resultadoDiv = document.getElementById("resultado");
+  const totalSpan = document.getElementById("total");
+
+  btn?.addEventListener("click", () => {
+    const personas = parseInt(input.value);
+    const transporteIndex = select.selectedIndex;
+    const precioTransporte = tipoTransporte[transporteIndex].precio;
+
+    const errorPersonas = document.getElementById("error-personas");
+
+    if (!input.value || isNaN(personas) || personas < 1) {
+      errorPersonas?.classList.remove("hidden");
+      return;
+    }
+
+    errorPersonas?.classList.add("hidden");
+
+    const total = calcularPresupuesto(precioTransporte, personas);
+
+    if (totalSpan && resultadoDiv) {
+      totalSpan.textContent = `${total}`;
+      resultadoDiv.classList.remove("hidden");
+    }
+  });
+</script>

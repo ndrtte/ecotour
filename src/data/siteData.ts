@@ -431,21 +431,21 @@ export const ofertasTemporada = [
     ],
   },
   {
-  nombre: "Promo Verano",
-  precioRegular: "600 HNL",
-  precioOferta: "350 HNL",
-  badge: "TIEMPO LIMITADO",
-  cuposDisponibles: 2,
-  cuposTotal: 8,
-  detalles: [
-    "Acceso especial de fin de semana a áreas recreativas",
-    "Paquete válido para 2 personas",
-    "Disponible únicamente durante temporada de verano (junio - agosto)",
-    "Ingreso con horario preferencial en fines de semana",
-    "Acceso a zonas seleccionadas del complejo",
-    "Promoción sujeta a disponibilidad de cupos"
-  ]
-},
+    nombre: "Promo Verano",
+    precioRegular: "600 HNL",
+    precioOferta: "350 HNL",
+    badge: "TIEMPO LIMITADO",
+    cuposDisponibles: 2,
+    cuposTotal: 8,
+    detalles: [
+      "Acceso especial de fin de semana a áreas recreativas",
+      "Paquete válido para 2 personas",
+      "Disponible únicamente durante temporada de verano (junio - agosto)",
+      "Ingreso con horario preferencial en fines de semana",
+      "Acceso a zonas seleccionadas del complejo",
+      "Promoción sujeta a disponibilidad de cupos",
+    ],
+  },
 ];
 
 export const testimonials = [
@@ -773,26 +773,33 @@ export const history = [
 
 export const paymentOptions = {
   methods: [
-    "Credit/Debit Cards",
-    "Bank Transfer",
+    "Tarjeta de crédito o débito",
+    "Transferencia",
+    "Efectivo",
+    "Pago móvil",
     "PayPal",
-    "Apple Pay",
-    "Google Pay",
   ],
-  plans: [
-    {
-      type: "Monthly",
-      description: "Pay month-to-month with no long-term commitment",
-    },
-    {
-      type: "Annual",
-      description: "Save 15% with annual payment - best value!",
-    },
-    {
-      type: "Family Plan",
-      description: "Special rates for families - contact us for details",
-    },
-  ],
-  guarantee: "7-day money-back guarantee on all memberships",
-  trial: "Free 7-day trial available for new members",
+
+  guarantee: "Cancelación flexible con reembolso según políticas de reserva",
+  trial:
+    "Las actividades se reservan con anticipación y están sujetas a disponibilidad",
 };
+
+export const tipoTransporte = [
+  {
+    tipo: "Ninguno",
+    precio: 0,
+  },
+  {
+    tipo: "Transporte propio",
+    precio: 0,
+  },
+  {
+    tipo: "Desde La Ceiba centro",
+    precio: 200,
+  },
+  {
+    tipo: "Desde el aeropuerto / muelle",
+    precio: 350,
+  },
+];
