@@ -1,5 +1,5 @@
 ---
-import { classes } from '../data/siteData';
+import { actividades } from '../data/siteData';
 ---
 
 <section id="classes" class="py-20 bg-slate-900">
@@ -12,19 +12,19 @@ import { classes } from '../data/siteData';
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {classes.map((classItem) => (
+      {actividades.map((actividad) => (
         <div class="bg-slate-800 p-8 rounded-xl border border-slate-700 hover:border-orange-500 transition-all transform hover:scale-105">
           <div class="flex justify-between items-start mb-6">
-            <h3 class="text-2xl font-bold text-white">{classItem.name}</h3>
+            <h3 class="text-2xl font-bold text-white">{actividad.nombre}</h3>
             <span class="bg-orange-500 text-white text-xs px-3 py-1 rounded-full font-semibold whitespace-nowrap">
-              {classItem.difficulty}
+              {actividad.dificultad}
             </span>
           </div>
-          <p class="text-gray-400 mb-6 leading-relaxed">{classItem.description}</p>
+          <p class="text-gray-400 mb-6 leading-relaxed">{actividad.descripcion}</p>
           <div class="flex items-center justify-between">
             <div class="flex items-center text-gray-500 gap-2">
               <i class="ri-time-line text-orange-500"></i>
-              <span>{classItem.duration}</span>
+              <span>{actividad.precio}</span>
             </div>
             <a
               href="/contact"

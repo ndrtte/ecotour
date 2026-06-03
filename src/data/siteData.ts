@@ -52,10 +52,9 @@ export const contactInfo = [
 
 export const navigation = [
   { name: "Inicio", href: "/" },
-  { name: "Quienes somos", href: "/about" },
   { name: "Excursiones", href: "/excursiones" },
   { name: "Paquetes Familiares", href: "/pricing" },
-  { name: "Guías", href: "/pricing" },
+  { name: "Guías", href: "/about" },
   { name: "Contacto", href: "/contact" },
 ];
 
