@@ -107,10 +107,11 @@ export const actividades = [
       "Vive la adrenalina del rafting en aguas clase III y IV rodeado de selva tropical. Una experiencia que combina naturaleza pura y aventura extrema.",
     precio: "850 HNL",
     dificultad: "Alta",
-    imagen: "",
+    imagen:
+      "https://visitatlantida.com/wp-content/uploads/2015/04/r%C3%ADo-cangrejal-omega-tours-rafting.jpg",
     detalles: [
       "Duración: 3 horas",
-      "Edad mínima: 12 años",
+      "Edad mínima: 18 años",
       "Equipo incluido",
       "Guía certificado",
       "No se requiere experiencia previa",
@@ -119,40 +120,44 @@ export const actividades = [
       "Rápidos emocionantes, paisajes impresionantes y una experiencia que no olvidarás.",
   },
   {
-    nombre: "Senderismo al Salto de Agua",
-    descripcion: "Camina entre la selva hasta llegar a una cascada escondida.",
+    nombre: "Senderismo en Pico Bonito",
+    descripcion:
+      "Explora senderos rodeados de selva tropical y descubre impresionantes paisajes naturales.",
     descripcionDetallada:
-      "Un recorrido a pie por senderos naturales que te lleva hasta una impresionante cascada rodeada de vegetación tropical.",
+      "Recorre senderos rodeados de exuberante vegetación, observa la fauna local y admira cascadas de aguas cristalinas.",
     precio: "450 HNL",
     dificultad: "Media",
-    imagen: "",
+    imagen:
+      "https://visitatlantida.com/wp-content/uploads/2015/08/hiking-en-el-parque-nacional-pico-bonito-puente-de-hamaca.jpg",
     detalles: [
       "Duración: 2.5 horas",
-      "Edad mínima: 8 años",
+      "Edad mínima: 10 años",
       "Zapatos de trekking recomendados",
       "Guía incluido",
       "Apto para familias",
     ],
     queEsperar:
-      "Paisajes verdes, sonidos de la naturaleza y un refrescante baño natural al final del recorrido.",
+      "Vistas panorámicas de la montaña, abundante biodiversidad, ríos de agua fresca y una experiencia inmersiva en la naturaleza hondureña.",
   },
   {
-    nombre: "Canopy en la Selva",
-    descripcion: "Vuela entre los árboles y vive la selva desde las alturas.",
+    nombre: "Canopy sobre el Cangrejal",
+    descripcion:
+      "Cruza entre plataformas suspendidas con vistas espectaculares al valle del Cangrejal.",
     descripcionDetallada:
-      "Deslízate por tirolesas instaladas en lo alto del bosque tropical con vistas impresionantes al río y la montaña.",
+      "Disfruta de un recorrido de canopy que combina adrenalina y naturaleza, permitiéndote observar desde las alturas los paisajes montañosos y los ríos cristalinos de la región.",
     precio: "650 HNL por persona",
     dificultad: "Media",
-    imagen: "",
+    imagen:
+      "https://www.selvatura.com/wp-content/uploads/2025/04/Canopy_1-scaled.jpg",
     detalles: [
       "Duración: 1.5 horas",
-      "Edad mínima: 10 años",
+      "Edad mínima: 12 años",
       "Peso máximo: 120 kg",
       "Arnés y casco incluidos",
       "Guía acompañante",
     ],
     queEsperar:
-      "Adrenalina, altura y una perspectiva única de la selva hondureña.",
+      "Velocidad, paisajes impresionantes y una perspectiva diferente de los atractivos naturales de La Ceiba.",
   },
   {
     nombre: "Senderismo Nocturno",
@@ -161,10 +166,11 @@ export const actividades = [
       "Una caminata guiada al caer la noche para observar la fauna nocturna, escuchar los sonidos de la selva y vivir una experiencia completamente diferente.",
     precio: "550 HNL",
     dificultad: "Media",
-    imagen: "",
+    imagen:
+      "https://www.unirioja.es/wp-content/uploads/2025/06/20250614-senderismo-Leon-Dormido-nocturno-Unirioja-001.jpg",
     detalles: [
       "Duración: 2 horas",
-      "Edad mínima: 10 años",
+      "Edad mínima: 15 años",
       "Linterna incluida",
       "Grupo máximo: 10 personas",
       "Guía naturalista",
@@ -179,10 +185,11 @@ export const actividades = [
       "Recorre tramos tranquilos y moderados del Río Cangrejal en kayak, rodeado de naturaleza y con la montaña de fondo.",
     precio: "600 HNL",
     dificultad: "Baja",
-    imagen: "",
+    imagen:
+      "https://www.lavilladesoledad.com/es/wp-content/uploads/sites/2/2013/08/picobonito-1160x665.jpg",
     detalles: [
       "Duración: 2 horas",
-      "Edad mínima: 8 años",
+      "Edad mínima: 16 años",
       "Chaleco salvavidas incluido",
       "Instrucción básica previa",
       "No se requiere experiencia",
@@ -192,112 +199,125 @@ export const actividades = [
   },
   {
     nombre: "Observación de Aves",
-    descripcion: "Descubre la increíble biodiversidad de aves de Honduras.",
+    descripcion:
+      "Explora los senderos naturales de Pico Bonito mientras observas aves en su entorno natural.",
     descripcionDetallada:
-      "Un recorrido guiado por senderos estratégicos para el avistamiento de especies endémicas y migratorias en su hábitat natural.",
+      "Recorrerás áreas ideales para el avistamiento de aves, donde podrás apreciar una gran variedad de especies propias de los bosques tropicales del Caribe hondureño.",
     precio: "400 HNL",
     dificultad: "Baja",
-    imagen: "",
+    imagen:
+      "https://aveshonduras.org/wp-content/uploads/2026/02/Hugo-Orellana-Lovely-Cotinga-1.png",
     detalles: [
       "Duración: 3 horas",
-      "Edad mínima: 6 años",
+      "Edad mínima: 10 años",
       "Binoculares disponibles",
-      "Guía ornitólogo",
+      "Guía especializado",
       "Salida al amanecer recomendada",
     ],
     queEsperar:
-      "Avistamiento de tucanes, loros y más de 50 especies registradas en la zona.",
+      "Cantos de aves, senderos rodeados de naturaleza y observar especies coloridas de Honduras.",
   },
   {
     nombre: "Tubing en el Río",
-    descripcion: "Déjate llevar por la corriente del río en un aro inflable.",
+    descripcion:
+      "Disfruta de una aventura acuática mientras recorres las aguas del río rodeado de naturaleza.",
     descripcionDetallada:
-      "Una actividad divertida y relajante para toda la familia. Flota sobre el Río Cangrejal disfrutando del paisaje y la frescura del agua.",
+      "Una actividad ideal para quienes buscan combinar diversión, paisajes naturales y contacto con el agua.",
     precio: "380 HNL",
     dificultad: "Baja",
-    imagen: "",
+    imagen:
+      "https://image-tc.galaxy.tf/wijpeg-1sklff835xqek6r3gp45c59t/1-tubing-rio-celeste-costa-rica.jpg?width=1920",
     detalles: [
       "Duración: 1.5 horas",
-      "Edad mínima: 7 años",
+      "Edad mínima: 10 años",
       "Tubo y chaleco incluidos",
-      "Tramo de aguas tranquilas",
+      "Guía acompañante",
       "Apto para familias",
     ],
-    queEsperar: "Diversión, frescura y un paseo relajante entre la naturaleza.",
+    queEsperar:
+      "Agua fresca, vistas naturales y una experiencia divertida para disfrutar en grupo o en familia.",
   },
   {
-    nombre: "Tour Fotográfico en la Selva",
+    nombre: "Tour Fotográfico de Naturaleza",
     descripcion:
-      "Captura la belleza de la naturaleza hondureña con un guía especializado.",
+      "Captura los paisajes, la flora y la fauna de uno de los entornos naturales más impresionantes de Honduras.",
     descripcionDetallada:
-      "Recorrido diseñado para fotógrafos y amantes de la naturaleza que quieren capturar imágenes únicas de flora, fauna y paisajes.",
+      "Explora senderos rodeados de vegetación tropical mientras descubres oportunidades únicas para fotografiar paisajes, aves, cascadas y otros atractivos naturales de la región.",
     precio: "500 HNL",
     dificultad: "Baja",
-    imagen: "",
+    imagen:
+      "https://diarioroatan.com/wp-content/uploads/2018/08/parque-nacional-pico-bonito-area-protegida-caribe-maya-rio-zacate-04.jpg",
     detalles: [
       "Duración: 3 horas",
       "Edad mínima: 8 años",
-      "Cualquier cámara o celular válido",
+      "Cualquier cámara o celular es bienvenido",
       "Guía naturalista",
       "Grupos de máximo 8 personas",
     ],
     queEsperar:
-      "Momentos únicos, luz natural espectacular y recuerdos visuales para toda la vida.",
+      "Paisajes espectaculares, abundante naturaleza y múltiples oportunidades para capturar recuerdos inolvidables.",
   },
   {
     nombre: "Rappel en Cascada",
     descripcion:
-      "Desciende por una cascada viva con cuerdas y equipo profesional.",
+      "Desciende por una cascada natural utilizando equipo especializado y acompañamiento profesional.",
+
     descripcionDetallada:
-      "Una de las actividades más emocionantes del catálogo. Descenderás por la cara de una cascada activa con equipo certificado y guías expertos.",
+      "Una experiencia ideal para quienes buscan emoción y contacto directo con los paisajes naturales de la región.",
     precio: "750 HNL",
     dificultad: "Alta",
-    imagen: "",
+    imagen:
+      "https://images.squarespace-cdn.com/content/v1/58a89f87d2b8579b70b82a9e/1578063070696-A255XE5DMPCAN665E5YR/adrenaline_to_the_max_package.JPG",
     detalles: [
       "Duración: 2 horas",
-      "Edad mínima: 14 años",
+      "Edad mínima: 16 años",
       "Peso máximo: 110 kg",
       "Todo el equipo incluido",
-      "Briefing de seguridad previo obligatorio",
+      "Inducción de seguridad obligatoria",
     ],
     queEsperar:
-      "Adrenalina pura, el sonido del agua y una vista que vale cada segundo del esfuerzo.",
+      "Adrenalina, impresionantes vistas naturales y la satisfacción de superar un emocionante desafío al aire libre.",
   },
   {
-    nombre: "Camping en la Selva",
-    descripcion: "Pasa la noche en el corazón del bosque tropical.",
+    nombre: "Camping en Pico Bonito",
+    descripcion:
+      "Disfruta una noche rodeado de naturaleza en uno de los entornos más impresionantes de Honduras.",
     descripcionDetallada:
-      "Una experiencia de inmersión total en la naturaleza. Cena, fogata, sonidos nocturnos y amanecer en la selva incluidos.",
+      "Vive una experiencia de conexión con la naturaleza pasando la noche en un área de campamento rodeada de bosque tropical.",
     precio: "1,200 HNL",
     dificultad: "Media",
-    imagen: "",
+    imagen:
+      "https://www.hondurastips.hn/wp-content/uploads/2020/09/La-tigra.jpg",
     detalles: [
       "Duración: 1 noche",
-      "Edad mínima: 12 años",
+      "Edad mínima: 10 años",
       "Tienda y sleeping bag incluidos",
       "Cena y desayuno incluidos",
-      "Guía presente toda la noche",
+      "Guía acompañante",
     ],
     queEsperar:
-      "Desconexión total, cielo estrellado sin contaminación lumínica y una experiencia que pocos se atreven a vivir.",
+      "Tranquilidad, observación de la naturaleza, cielos despejados y una experiencia única lejos del ritmo de la ciudad.",
   },
   {
-    nombre: "Caminata al Pico Bonito",
-    descripcion: "Conquista uno de los picos más emblemáticos de Honduras.",
+    nombre: "Excursión a Cayos Cochinos",
+    descripcion:
+      "Descubre playas de arena blanca, aguas cristalinas y uno de los ecosistemas marinos más impresionantes de Honduras.",
     descripcionDetallada:
-      "Una excursión de alto rendimiento para los más aventureros. Ascenso al Parque Nacional Pico Bonito con vistas panorámicas al Caribe.",
-    precio: "950 HNL",
-    dificultad: "Alta",
+      "Disfruta de una aventura de un día visitando Cayos Cochinos, un archipiélago protegido reconocido por su belleza natural y biodiversidad.",
+    precio: "1,500 HNL",
+    dificultad: "Baja",
     imagen: "",
+
     detalles: [
-      "Duración: 6 horas",
-      "Edad mínima: 16 años",
-      "Nivel físico medio-alto requerido",
-      "Refrigerio incluido",
-      "Guía certificado de montaña",
+      "Duración: Día completo",
+      "Salida desde La Ceiba",
+      "Transporte marítimo incluido",
+      "Tiempo libre para explorar",
+      "Apto para toda la familia",
     ],
+
     queEsperar:
-      "Vistas al Mar Caribe, biodiversidad única y una sensación de logro incomparable.",
+      "Paisajes espectaculares, aguas turquesas, vida marina y una experiencia inolvidable en el Caribe hondureño.",
   },
   {
     nombre: "Visita a Comunidad Local",
