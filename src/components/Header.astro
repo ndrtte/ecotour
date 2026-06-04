@@ -1,5 +1,6 @@
 ---
 import { navigation, siteData, contactInfo } from "../data/siteData";
+import logo from "@/assets/logo.png";
 ---
 
 <header
@@ -13,7 +14,7 @@ import { navigation, siteData, contactInfo } from "../data/siteData";
           href="/"
           class="text-2xl font-bold text-orange-500 font-heading tracking-tight flex items-center gap-2"
         >
-          <img alt="logo" src="/src/assets/logo.png" class="h-15 w-auto" />
+          <img alt="logo" src={logo.src} class="h-15 w-auto" />
           {siteData.name}
         </a>
       </div>
