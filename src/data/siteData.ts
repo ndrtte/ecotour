@@ -700,7 +700,8 @@ export const equipo = [
     specialization: "Logística & Coordinación en sitio",
     experience: "8+ años",
     bio: "José Andrés supervisa las operaciones diarias en el lugar, asegurando que cada actividad se desarrolle de forma ordenada, segura y eficiente para todos los visitantes.",
-    image: "https://plus.unsplash.com/premium_photo-1664910497704-16ceb7f6d95e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:
+      "https://plus.unsplash.com/premium_photo-1664910497704-16ceb7f6d95e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Sofía Martínez",
@@ -708,46 +709,41 @@ export const equipo = [
     specialization: "Atención al cliente & Gestión de reservas",
     experience: "4+ años",
     bio: "Sofía es la encargada de guiar a los visitantes en el proceso de reservas, brindando información clara y apoyo personalizado antes de cada experiencia.",
-    image: "https://images.unsplash.com/photo-1598013924228-f336656b163c?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image:
+      "https://images.unsplash.com/photo-1598013924228-f336656b163c?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
-export const history = [
+export const lineamientos = [
   {
-    year: "2009",
-    title: "Founded",
-    description:
-      "FitZone Gym was founded with a vision to create an inclusive fitness community where everyone feels welcome.",
+    numero: "1",
+    titulo: "Documento de identificación",
+    descripcion:
+      "Todos los participantes deben presentar una identificación oficial vigente antes de iniciar la actividad. Ciudadanos locales pueden presentar su documento nacional de identidad; visitantes extranjeros deben presentar pasaporte válido.",
   },
   {
-    year: "2012",
-    title: "First Expansion",
-    description:
-      "Expanded facilities to include a dedicated group class studio and added 20+ new pieces of equipment.",
+    numero: "2",
+    titulo: "Firma de exención de responsabilidad",
+    descripcion:
+      "La firma de la hoja de exención de responsabilidad es obligatoria para todos los participantes. En el caso de menores de edad, el documento debe ser firmado por un padre, madre o tutor legal presente en el lugar.",
   },
   {
-    year: "2015",
-    title: "24/7 Access",
-    description:
-      "Introduced 24/7 access for Premium and Elite members, making fitness accessible around the clock.",
+    numero: "3",
+    titulo: "Calzado cerrado con tracción",
+    descripcion:
+      "El uso de calzado cerrado con suela de tracción es obligatorio durante todas las actividades. No se permitirá el acceso con sandalias, chancletas, tacones ni calzado deportivo sin agarre. Esta medida es fundamental para la seguridad en terrenos irregulares.",
   },
   {
-    year: "2018",
-    title: "500 Members Milestone",
-    description:
-      "Reached 500 active members and expanded our trainer team to 20 certified professionals.",
+    numero: "4",
+    titulo: "Ropa de cambio y protector solar biodegradable",
+    descripcion:
+      "Se recomienda llevar una muda de ropa completa adicional, considerando las condiciones climáticas del recorrido. El uso de protector solar es requerido; únicamente se permite protector solar de fórmula biodegradable para proteger los ecosistemas naturales de la zona.",
   },
   {
-    year: "2020",
-    title: "Digital Integration",
-    description:
-      "Launched online class booking and virtual training options to adapt to changing needs.",
-  },
-  {
-    year: "2024",
-    title: "Award Winner",
-    description:
-      "Recognized as 'Best Gym 2024' by the local fitness community, celebrating 15 years of excellence.",
+    numero: "5",
+    titulo: "Notificación de condiciones médicas preexistentes",
+    descripcion:
+      "Todo participante con condiciones médicas preexistentes — incluyendo asma, problemas cardíacos, alergias severas u otras condiciones relevantes — debe notificarlo al equipo de guías antes del inicio de la actividad. Esta información es confidencial y se utiliza exclusivamente para garantizar la seguridad de cada participante.",
   },
 ];
 

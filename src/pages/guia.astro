@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
-import { siteData, equipo, history } from "../data/siteData";
+import { siteData, lineamientos } from "../data/siteData";
 ---
 
 <Layout
@@ -15,100 +15,21 @@ import { siteData, equipo, history } from "../data/siteData";
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto">
         <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">
-          About {siteData.name}
+          Requisitos de admisión y seguridad
         </h1>
         <p class="text-xl text-gray-300">
-          We're dedicated to helping you achieve your fitness goals and live a
-          healthier life
+          Antes de cada experiencia, todos los participantes deben cumplir con
+          los siguientes requisitos. Están diseñados para garantizar tu
+          seguridad y la de quienes te acompañan.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Mission Section -->
-  <section class="py-20 bg-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-4xl font-bold text-white mb-8 text-center">
-          Our Mission
-        </h2>
-        <div class="prose prose-invert max-w-none">
-          <p class="text-xl text-gray-300 mb-6">
-            At {siteData.name}, we believe that fitness is not just about
-            physical strength, but about building confidence, discipline, and a
-            positive mindset. Our mission is to create an inclusive community
-            where everyone feels welcome and supported on their fitness journey.
-          </p>
-          <p class="text-lg text-gray-400 mb-6">
-            We provide state-of-the-art facilities, expert guidance, and a
-            supportive environment that empowers our members to push their
-            limits and achieve extraordinary results.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Values Section -->
   <section class="py-20 bg-slate-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl font-bold text-white mb-12 text-center">
-        Our Values
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        <div
-          class="bg-slate-800 p-8 rounded-xl border border-slate-700 text-center hover:border-orange-500 transition-all"
-        >
-          <div
-            class="w-20 h-20 bg-orange-500/10 rounded-lg flex items-center justify-center mx-auto mb-6"
-          >
-            <i class="ri-trophy-line text-4xl text-orange-500"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Excellence</h3>
-          <p class="text-gray-400 leading-relaxed">
-            We strive for excellence in everything we do, from our facilities to
-            our service
-          </p>
-        </div>
-        <div
-          class="bg-slate-800 p-8 rounded-xl border border-slate-700 text-center hover:border-orange-500 transition-all"
-        >
-          <div
-            class="w-20 h-20 bg-orange-500/10 rounded-lg flex items-center justify-center mx-auto mb-6"
-          >
-            <i class="ri-hand-heart-line text-4xl text-orange-500"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Community</h3>
-          <p class="text-gray-400 leading-relaxed">
-            Building a supportive community where everyone can thrive together
-          </p>
-        </div>
-        <div
-          class="bg-slate-800 p-8 rounded-xl border border-slate-700 text-center hover:border-orange-500 transition-all"
-        >
-          <div
-            class="w-20 h-20 bg-orange-500/10 rounded-lg flex items-center justify-center mx-auto mb-6"
-          >
-            <i class="ri-focus-3-line text-4xl text-orange-500"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Results</h3>
-          <p class="text-gray-400 leading-relaxed">
-            Focused on delivering real, measurable results for every member
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- History/Timeline Section -->
-  <section class="py-20 bg-slate-900">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl font-bold text-white mb-12 text-center">
-        Our Journey
-      </h2>
       <div class="max-w-4xl mx-auto">
         <div class="relative">
-          <!-- Timeline Line -->
           <div
             class="absolute left-8 top-0 bottom-0 w-0.5 bg-orange-500/30 hidden md:block"
           >
@@ -116,26 +37,26 @@ import { siteData, equipo, history } from "../data/siteData";
 
           <div class="space-y-12">
             {
-              history.map((milestone, index) => (
+              lineamientos.map((lineamiento, index) => (
                 <div class="relative flex items-start gap-6">
                   <div class="hidden md:block shrink-0">
                     <div class="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center border-4 border-slate-900">
                       <span class="text-white font-bold text-sm">
-                        {milestone.year}
+                        {lineamiento.numero}
                       </span>
                     </div>
                   </div>
                   <div class="flex-1 bg-slate-800 p-6 rounded-xl border border-slate-700 hover:border-orange-500 transition-all">
                     <div class="md:hidden mb-2">
                       <span class="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-bold">
-                        {milestone.year}
+                        {lineamiento.numero}
                       </span>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-2">
-                      {milestone.title}
+                      {lineamiento.titulo}
                     </h3>
                     <p class="text-gray-300 leading-relaxed">
-                      {milestone.description}
+                      {lineamiento.descripcion}
                     </p>
                   </div>
                 </div>
