@@ -1,5 +1,5 @@
 ---
-import { navigation, siteData } from "../data/siteData";
+import { navigation, siteData, contactInfo } from "../data/siteData";
 ---
 
 <header
@@ -8,7 +8,7 @@ import { navigation, siteData } from "../data/siteData";
   <nav class="max-w-5xl w-full px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between py-4 gap-30">
       <!-- Logo -->
-      <div class="shrink-0 flex items-center">
+      <div class="flex items-center">
         <a
           href="/"
           class="text-2xl font-bold text-orange-500 font-heading tracking-tight flex items-center gap-2"
@@ -31,13 +31,27 @@ import { navigation, siteData } from "../data/siteData";
           ))
         }
         <a
-            href="https://wa.me/50412345678?text=Hola,%20quiero%20reservar%20una%20guía"
+          href="https://wa.me/50412345678?text=Hola,%20quiero%20reservar%20una%20guía"
           class="whitespace-nowrap bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-semibold transition-all duration-200 inline-flex items-center justify-center gap-2 px-6 py-2.5"
           target="_blank"
         >
           <i class="ri-whatsapp-line"></i>
           Reservar Guía por WhatsApp
         </a>
+
+        <div class="flex flex-col gap-1 text-sm text-gray-300">
+          <a
+            href={`tel:${siteData.keeperPhone}`}
+            class="inline-flex items-center gap-1.5 hover:text-orange-500 transition-colors whitespace-nowrap"
+          >
+            <i class="ri-phone-line"></i>
+            {siteData.keeperPhone}
+          </a>
+          <span class="inline-flex items-center gap-1.5 whitespace-nowrap">
+            <i class="ri-time-line"></i>
+            {siteData.schedule}
+          </span>
+        </div>
       </div>
 
       <!-- Mobile menu button -->
@@ -70,6 +84,19 @@ import { navigation, siteData } from "../data/siteData";
         Reservar Guía por WhatsApp
         <i class="ri-arrow-right-line"></i>
       </a>
+      <div class="flex flex-col gap-1 text-sm text-gray-300">
+          <a
+            href={`tel:${siteData.keeperPhone}`}
+            class="inline-flex items-center gap-1.5 hover:text-orange-500 transition-colors whitespace-nowrap"
+          >
+            <i class="ri-phone-line"></i>
+            {siteData.keeperPhone}
+          </a>
+          <span class="inline-flex items-center gap-1.5 whitespace-nowrap">
+            <i class="ri-time-line"></i>
+            {siteData.schedule}
+          </span>
+        </div>
     </div>
   </nav>
 </header>

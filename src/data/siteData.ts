@@ -4,6 +4,8 @@ export const siteData = {
   description: "La aventura más auténtica de Honduras te está esperando.",
   address: "KM 8 Carretera a las Cuencas, La Ceiba",
   phone: "+504 2440-0245",
+  keeperPhone : "+504 9876-5432",
+  schedule: "Lun-Dom 5am - 6pm" ,
   email: "info@ecotourcangrejal.com",
   social: {
     facebook: "https://facebook.com",
@@ -39,6 +41,12 @@ export const contactInfo = [
     content: siteData.email,
     link: `mailto:${siteData.email}`,
   },
+  {
+    icon: "ri-mail-line",
+    title: "Telefono de Guardabosques",
+    content: siteData.keeperPhone,
+    link: `tel:${siteData.keeperPhone}`,
+  }
 ];
 
 export const navigation = [
