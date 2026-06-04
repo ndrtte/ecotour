@@ -45,7 +45,7 @@ export const navigation = [
   { name: "Inicio", href: "/" },
   { name: "Excursiones", href: "/excursiones" },
   { name: "Paquetes", href: "/paquetes" },
-  { name: "Guías", href: "/about" },
+  { name: "Guías", href: "/guia" },
   { name: "Contacto", href: "/contact" },
 ];
 
@@ -78,7 +78,7 @@ export const features = [
     title: "Paquetes personalizados",
     description:
       "Diseñamos itinerarios a tu medida según tus intereses y tiempo",
-    icon: "ri-restaurant-line",
+    icon: "ri-red-packet-line",
   },
   {
     title: "Comunidad viajera",
@@ -591,11 +591,15 @@ export const statistics = [
   {
     number: "10k+",
     label: "Tours completados",
-    icon: "ri-calendar-check-line",
+    icon: "ri-tree-line",
   },
-  { number: "5k+", label: "Kilómetros recorridos", icon: "ri-line-chart-line" },
+  {
+    number: "2k+",
+    label: "Kilómetros recorridos",
+    icon: "ri-treasure-map-line",
+  },
   { number: "98%", label: "Tasa de satisfacción", icon: "ri-heart-line" },
-  { number: "15+", label: "Años de experiencia", icon: "ri-award-line" },
+  { number: "5+", label: "Años de experiencia", icon: "ri-award-line" },
 ];
 
 export const fullSchedule = {
@@ -662,64 +666,49 @@ export const fullSchedule = {
   ],
 };
 
-export const trainers = [
+export const equipo = [
   {
-    name: "John Smith",
-    role: "Head Trainer",
-    specialization: "Strength Training & Nutrition",
-    experience: "10+ years",
-    bio: "John is a certified strength and conditioning specialist with over a decade of experience helping athletes and fitness enthusiasts achieve their goals. He specializes in strength training, powerlifting, and nutrition coaching.",
+    name: "María Fernanda López",
+    role: "Coordinadora de Experiencias",
+    specialization: "Turismo de aventura & Atención al visitante",
+    experience: "7+ años",
+    bio: "María Fernanda se encarga de diseñar y coordinar las experiencias para garantizar que cada visita sea segura, organizada y memorable. Tiene amplia experiencia en turismo de aventura y atención al cliente en entornos naturales.",
     image:
-      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop&q=80",
-    certifications: ["CSCS", "NASM-CPT", "Nutrition Specialist"],
+      "https://images.unsplash.com/photo-1538100573692-d2d3f4cf3595?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    name: "Sarah Johnson",
-    role: "Yoga & Pilates Instructor",
-    specialization: "Yoga, Pilates & Holistic Wellness",
-    experience: "8+ years",
-    bio: "Sarah is a certified yoga and Pilates instructor with extensive training in multiple yoga styles. She combines traditional practices with modern techniques to help members find balance, flexibility, and inner peace.",
+    name: "Carlos Alberto Reyes",
+    role: "Guía de Aventura",
+    specialization: "Senderismo & Seguridad en montaña",
+    experience: "5+ años",
+    bio: "Carlos es guía especializado en senderismo y actividades al aire libre. Su enfoque está en la seguridad del visitante y en crear recorridos dinámicos que conecten con la naturaleza.",
     image:
-      "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&h=400&fit=crop&q=80",
-    certifications: ["RYT-500", "Pilates Certified", "Meditation Instructor"],
+      "https://images.unsplash.com/photo-1625513966414-cce34d7344be?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    name: "Mike Chen",
-    role: "HIIT Specialist",
-    specialization: "High-Intensity Training & Athletic Performance",
-    experience: "7+ years",
-    bio: "Mike is an expert in high-intensity interval training and athletic performance. His dynamic classes push members to new limits while maintaining safety and proper form. He's passionate about helping people discover their inner athlete.",
+    name: "Daniela Vargas",
+    role: "Especialista en Atención al Cliente",
+    specialization: "Reservas & Experiencia del visitante",
+    experience: "6+ años",
+    bio: "Daniela se encarga de la atención al cliente y el manejo de reservas, asegurando una comunicación clara y rápida para cada visitante antes y durante su experiencia.",
     image:
-      "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=400&h=400&fit=crop&q=80",
-    certifications: [
-      "ACE-CPT",
-      "HIIT Specialist",
-      "Athletic Performance Coach",
-    ],
+      "https://plus.unsplash.com/premium_photo-1670884442192-7b58d513cd55?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    name: "Emma Davis",
-    role: "Cardio & Dance Instructor",
-    specialization: "Cardio, Dance Fitness & Zumba",
-    experience: "5+ years",
-    bio: "Emma brings energy and fun to every class. With a background in dance and fitness, she creates engaging cardio workouts that make exercise enjoyable. Her classes are perfect for those who want to have fun while getting fit.",
-    image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&q=80",
-    certifications: ["Zumba Certified", "Dance Fitness Instructor", "ACE-CPT"],
+    name: "José Andrés Mejía",
+    role: "Encargado de Operaciones",
+    specialization: "Logística & Coordinación en sitio",
+    experience: "8+ años",
+    bio: "José Andrés supervisa las operaciones diarias en el lugar, asegurando que cada actividad se desarrolle de forma ordenada, segura y eficiente para todos los visitantes.",
+    image: "https://plus.unsplash.com/premium_photo-1664910497704-16ceb7f6d95e?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    name: "James Wilson",
-    role: "CrossFit Coach",
-    specialization: "CrossFit & Functional Movement",
-    experience: "6+ years",
-    bio: "James is a Level 2 CrossFit coach with a passion for functional fitness. He helps members build strength, improve mobility, and achieve their fitness goals through varied, high-intensity workouts.",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&q=80",
-    certifications: [
-      "CrossFit Level 2",
-      "Functional Movement Specialist",
-      "Olympic Lifting Coach",
-    ],
+    name: "Sofía Martínez",
+    role: "Asesora de Reservas",
+    specialization: "Atención al cliente & Gestión de reservas",
+    experience: "4+ años",
+    bio: "Sofía es la encargada de guiar a los visitantes en el proceso de reservas, brindando información clara y apoyo personalizado antes de cada experiencia.",
+    image: "https://images.unsplash.com/photo-1598013924228-f336656b163c?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
