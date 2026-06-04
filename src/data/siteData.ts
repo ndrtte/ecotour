@@ -23,30 +23,21 @@ export const socialLinks = [
 export const contactInfo = [
   {
     icon: "ri-map-pin-line",
-    title: "Address",
+    title: "Dirección",
     content: siteData.address,
     link: null,
   },
   {
     icon: "ri-phone-line",
-    title: "Phone",
+    title: "Teléfono",
     content: siteData.phone,
     link: `tel:${siteData.phone}`,
   },
   {
     icon: "ri-mail-line",
-    title: "Email",
+    title: "Correo electrónico",
     content: siteData.email,
     link: `mailto:${siteData.email}`,
-  },
-  {
-    icon: "ri-time-line",
-    title: "Hours",
-    content: [
-      "Open 24/7 for Premium and Elite members",
-      "Basic members: 5 AM - 11 PM daily",
-    ],
-    link: null,
   },
 ];
 
